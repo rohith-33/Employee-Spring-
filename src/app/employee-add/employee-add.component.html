@@ -1,10 +1,10 @@
-<h1>Add Employee</h1>
+<h2>Add Employee</h2>
 
 <form #addForm="ngForm" (ngSubmit)="addEmployee(addForm.value)" >
-    <input type="text" name="employeeId" ngModel placeholder="Enter Employee Id" ><br><br>
     <input type="text" name="employeeFirstName" ngModel placeholder="Enter First Name"><br><br>
     <input type="text" name="employeeLastName" ngModel placeholder="Enter Last Name"><br><br>
     <input type="text" name="employeePhone" ngModel placeholder="Enter Phone "><br><br>
     <input type="text" name="employeLocation" ngModel placeholder="Enter Location"><br><br>
     <input type="text" name="employeeEmail" ngModel placeholder="Enter Email"><br><br>
+    <button type="submit">Add</button>
 </form>

@@ -11,29 +11,14 @@ export class AppComponent {
 
   employeeList: any;
 
-  constructor(private employeeService: EmployeeService) {}
+  constructor(private employeeService: EmployeeService) { }
 
-
-  // addEmployee(data: any) {
-  //   this.employeeService.addEmployee(data);
-  // }
-
-  deleteEmployee(id: any) {
-    this.employeeService.deleteEmployee(id);
-    this.getAllEmployees();
-  }
-
-  // updateEmployee(id: any, data: any) {
-  //   this.employeeService.updateEmployee(id, data);
-  // }
+  
 
   getEmployee(id: number) {
     this.employeeService.getEmployee(id);
   }
 
-  getAllEmployees() {
-    this.employeeService.getAllEmployees().subscribe(
-      (result) => this.employeeList = result);
-  }
+  
 
 }
