@@ -13,12 +13,4 @@ export class AppComponent {
 
   constructor(private employeeService: EmployeeService) { }
 
-  
-
-  getEmployee(id: number) {
-    this.employeeService.getEmployee(id);
-  }
-
-  
-
 }
